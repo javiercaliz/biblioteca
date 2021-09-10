@@ -1,0 +1,19 @@
+spring:
+ #Configuración MySQL
+  datasource: 
+    url: jdbc:mysql://db4free.net:3306/biblios
+    username: javiercaliz
+    password: root6617
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+#Configuración Creación de tablas (Hibernate)
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect      
+#Que thymeleaf no guarde datos en cache
+  thymeleaf:
+    cache: false 
+

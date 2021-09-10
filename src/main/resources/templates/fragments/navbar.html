@@ -1,0 +1,33 @@
+<nav th:fragment="barra" class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav fw-bold">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="@{/}">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/prestamos/listado}">Préstamos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/clientes/listado}">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/libros/listado}">Libros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/autores/listado}">Autores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/editoriales/listado}">Editoriales</a>
+        </li>
+      </ul>
+      <a class="nav-link active mt-0" th:href="@{/registro/form?action=crear}">
+      <button class="btn btn-warning ms-5">Registrarse</button></a>
+    </div>
+  </div>
+</nav>

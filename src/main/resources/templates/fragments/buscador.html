@@ -1,0 +1,79 @@
+<div th:fragment="buscador_libros" class="container d-flex text-center justify-content-end mt-3 mb-1">
+    <form class="row g-3" th:action="@{/libros/listado}" method="GET">
+
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">Buscar</button>
+        </div>
+        <div class="col-auto" th:action="@{/libros/listado}">
+            <button type="submit" class="btn btn-warning mb-3">Borrar Filtro</button>
+        </div>
+    </form>
+</div>
+
+<div th:fragment="buscador_editoriales" class="container d-flex text-center justify-content-end mt-3 mb-1">
+    <form class="row g-3" th:action="@{/editoriales/listado}" method="GET">
+
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">Buscar</button>
+        </div>
+        <div class="col-auto" th:action="@{/editoriales/listado}">
+            <button type="submit" class="btn btn-warning mb-3">Borrar Filtro</button>
+        </div>
+    </form>
+</div>
+
+<div th:fragment="buscador_autores" class="container d-flex text-center justify-content-end mt-3 mb-1">
+    <form class="row g-3" th:action="@{/autores/listado}" method="GET">
+
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">Buscar</button>
+        </div>
+        <div class="col-auto" th:action="@{/autores/listado}">
+            <button type="submit" class="btn btn-warning mb-3">Borrar Filtro</button>
+        </div>
+    </form>
+</div>
+
+<div th:fragment="buscador_clientes" class="container d-flex text-center justify-content-end mt-3 mb-1">
+    <form class="row g-3" th:action="@{/clientes/listado}" method="GET">
+
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">Buscar</button>
+        </div>
+        <div class="col-auto" th:action="@{/clientes/listado}">
+            <button type="submit" class="btn btn-warning mb-3">Borrar Filtro</button>
+        </div>
+    </form>
+</div>
+
+<div th:fragment="buscador_prestamos" class="container d-flex text-center justify-content-end mt-3 mb-1">
+    <form class="row g-3" th:action="@{/prestamos/listado}" method="GET">
+
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="text" class="form-control" name="q" placeholder="Buscar...">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">Buscar</button>
+        </div>
+        <div class="col-auto" th:action="@{/prestamos/listado}">
+            <button type="submit" class="btn btn-warning mb-3">Borrar Filtro</button>
+        </div>
+    </form>
+</div>
